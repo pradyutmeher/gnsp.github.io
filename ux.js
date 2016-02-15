@@ -25,8 +25,8 @@ $(document).ready(function(){
 
 		// Parallax Shit
 		
-		$('.bg-layer-1, .bg-layer-2').css("transform", "translate(0px, "+scrl/4+"px)");
-		$('.bg-layer-3').css("transform","translate(0px, "+scrl/5+"px)");
+		$('.bg-layer-1, .bg-layer-2').css("transform", "translate(0px, "+scrl/1.5+"px)");
+		$('.bg-layer-3').css("transform","translate(0px, "+scrl/3+"px)");
 		$('.bg-layer-4, .bg-layer-5').css('transform','translate(0px, '+scrl/2+'px)');
 		$('.logo').css('transform','translate(0px, '+scrl/2+'px)');
 
@@ -34,19 +34,34 @@ $(document).ready(function(){
 
 		var lgtop = $('.parallax-bg .logo').offset().top;
 		if(scrl > lgtop-90 ){
-			$(".top-nav").css({"background":"rgba(255,255,255,0.9)", 
-				"box-shadow":"0px 2px 5px #ccc"});
-			$('.site-name a').css("color","#333");
-			$('.site-logo').css("borderColor", "#333");
-			$('.nav-list ul li a').css("color","#333");
+			$(".top-nav").css({"background":"rgba(255,255,255,0.95)", 
+				"box-shadow":"0px 2px 5px #ccc",
+				"height":"30px"});
+			$('.site-name a').css({"color":"#333","font-size":"0.8em"});
+			$('.site-logo').css({"color":"white",
+								"background":"#333",
+								"width":"20px",
+								"height":"20px",
+								"line-height": "20px",
+								"font-size":"0.8em"});
+			$('.nav-list ul li a').css({"color":"#333",
+										"font-size": "0.8em",
+										"padding-bottom":"3px"});
 			oldColorOfNavLink = "#333";
 		}
 		else{
-			$(".top-nav").css({"background":"rgba(0,0,0,0.5)",
-				"box-shadow":"none"});
-			$('.site-name a').css("color","white");
-			$('.site-logo').css("borderColor", "white");
-			$('.nav-list ul li a').css("color","white");
+			$(".top-nav").css({"background":"rgba(0,0,0,0.1)",
+				"box-shadow":"none",
+				"height":"80px"});
+			$('.site-name a').css({"color":"white","font-size":"1em"});
+			$('.site-logo').css({"background":"rgba(50,150,255,0.5)",
+								"width":"40px",
+								"height":"40px",
+								"line-height": "40px",
+								"font-size":"1em"});
+			$('.nav-list ul li a').css({"color":"white",
+										"font-size":"1em",
+										"padding-bottom":"25px"});
 			oldColorOfNavLink = "white";
 		}
 	});
