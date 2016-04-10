@@ -1,0 +1,22 @@
+@font-face{
+  font-family:'SFNS';
+  font-style:  normal;
+  font-weight: normal;
+  src: url('SFNS.ttf') format('truetype');
+}
+
+body{
+  font-family: 'SFNS', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+::-webkit-scrollbar-track {
+    background: #999; 
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #555;
+}

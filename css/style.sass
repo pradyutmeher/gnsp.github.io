@@ -1,0 +1,241 @@
+// GENERIC ELEMENTS
+
+body
+  min-height: 100vh
+  height: 100%
+  min-width: 1200px
+  padding: 0
+  margin: 0
+  font-family: 'SFNS', sans-serif
+
+hr
+  border-top: 1px black solid
+  border-bottom: 0px black solid
+
+h5
+  //margin: 0
+  line-height: 1
+
+
+///////////////////////////////////////////////////////////
+//  HELPER CLASSES
+///////////////////////////////////////////////////////////
+
+
+.fill
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+
+
+.content
+  position: relative
+  width: 100%
+
+
+.valign-center
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.centered-text
+  position: relative
+  width: 100%
+  text-align: center
+
+.lr-padded-50
+  padding-left: 50px !important
+  padding-right: 50px !important
+
+.lr-padded-20
+  padding-left: 20px !important
+  padding-right: 20px !important
+
+.padded-50
+  padding: 50px !important
+
+.padded-30
+  padding: 30px !important
+
+.padded-20
+  padding: 20px !important
+
+.rounded-corner
+  border-radius: 7px
+
+.debug
+  border: 1px red solid
+
+.shadow-heavy
+  box-shadow: 0px 0px 10px #000
+
+.large-paragraph
+  line-height: 1.7
+
+
+.vertical-spanner
+  position: relative
+  display: block
+  height: 200px
+
+.vertical-spanner-100
+  position: relative
+  display: block
+  height: 100px
+
+
+.centered-div
+  position: relative
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+
+.ht-50
+  height: 50px
+
+.ht-80
+  height: 80px
+
+.ht-100
+  height: 100px
+
+a.white-link
+  text-decoration: none
+  color: white
+  &:hover
+    color: #e74c3c
+
+.white-circle
+  position: relative
+  width: 100px
+  height: 100px
+  display: block
+  margin-top: 20px
+  margin-bottom: 20px
+  background: #fff
+  border-radius: 50%
+  border: 1px #777 solid
+
+.shadow-heavy
+  box-shadow: 0px 0px 10px #555
+
+.heading-bar
+  width: 100%
+  padding: 10px
+  padding-left: 30px
+  background: #006064
+  color: white
+
+///////////////////////////////////////////////////////////////////////
+// SPECIFIC ITEMS
+///////////////////////////////////////////////////////////////////////
+
+.navbar
+  position: relative
+  width: 100%
+  height: 600px
+  background:
+    color: #F4B350 
+  ul li
+    display: inline-block
+    a
+      color: white
+      text-decoration: none
+      margin-left: 20px
+
+      &:hover, &:focus
+        color: yellow
+
+    img
+      max-height: 40px
+
+.brand-name
+  display: flex
+  align-items: center
+  margin: 0
+  padding: 0
+  li a
+    margin-right: 0px
+
+.hul-text
+  max-height: 20px
+
+.hero-image
+  position: relative
+  width: 100%
+  height: 400px
+  background:
+    image: url('images/bg_0.jpg')
+    position: bottom center
+    attachment: fixed
+    size: 100%
+
+#hul-text
+  height: 20px
+
+.vert-menu
+  margin-bottom: 50px
+  ul
+    margin: 0
+    border: 1px #777 solid
+    border-radius: 5px
+    li
+      margin: 0
+      display: block
+      padding: 10px
+      padding-left: 30px
+      padding-right: 30px
+      border-bottom: 1px #777 solid
+      a
+        color: #006064
+        text-decoration: none
+
+      &:hover, &:focus
+        background: #006064
+        a
+          color: white
+      &:last-child
+        border-bottom: 0px #777 solid
+
+ul.navbar-links
+  width: 100%
+  display: flex
+  justify-content: flex-end
+  li
+    display: inline-block
+    padding: 5px
+    a
+      margin-left: 30px
+
+ul.tabbar-links
+  width: 100%
+  display: flex
+  justify-content: space-around
+
+
+img.profile-pic
+  border: 2px #777 solid
+
+
+table.profile-data-table
+  tr
+    td
+      padding-right: 50px
+    td:first-child
+      width: 20%
+      text-align: right
+      padding-right: 30px
+
+.treeview
+  width: 100%
+  padding-left: 30px
+
+
+#errorMessageDiv
+  postion: fixed
+  top: 0
+  left: 0
+  width: 100%
