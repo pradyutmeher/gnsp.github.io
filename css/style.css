@@ -13,7 +13,7 @@ hr {
 h5 {
   line-height: 1; }
 
-h1 {
+h1, h2 {
   letter-spacing: 1px;
   color: rgba(0, 0, 0, 0.4); }
 
@@ -22,6 +22,22 @@ h1 {
 
 .row {
   margin: 0 !important; }
+
+table {
+  width: 100%; }
+  table tr {
+    height: 80px;
+    border-bottom: 1px rbga(0, 0, 0, 0.8) solid !important; }
+    table tr th {
+      background: #F9BF3B !important; }
+    table tr td, table tr th {
+      padding-left: 30px; }
+      table tr td:first-child, table tr th:first-child {
+        width: 30%; }
+
+progress {
+  height: 20px;
+  width: 90%; }
 
 .fill {
   position: absolute;
