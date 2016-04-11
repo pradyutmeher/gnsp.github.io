@@ -37,7 +37,15 @@ table {
 
 progress {
   height: 20px;
-  width: 90%; }
+  width: 90%;
+  background: #fff;
+  border-radius: 10px; }
+  progress::-webkit-progress-bar {
+    background: #E9D460;
+    border-radius: 10px; }
+  progress::-webkit-progress-value {
+    background: #E67E22;
+    border-radius: 10px; }
 
 .fill {
   position: absolute;
